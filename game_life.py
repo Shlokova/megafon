@@ -67,7 +67,7 @@ class GameOfLife:
         if cell[0] != 0 and cell[1] != 0:
             neig += [[cell[0] - 1, cell[1] - 1]]
         if cell[0] != 0 and cell[1] != self.cell_height - 1:
-            neig += [[cell[0] - 1, cell[1] - 1]]
+            neig += [[cell[0] - 1, cell[1] + 1]]
         if cell[0] != self.cell_width - 1:
             neig += [[cell[0] + 1, cell[1]]]
         if cell[0] != self.cell_width - 1 and cell[1] != 0:
